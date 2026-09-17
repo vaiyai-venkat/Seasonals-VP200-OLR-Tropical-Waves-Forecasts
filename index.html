@@ -1,0 +1,379 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23580\viewh12920\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta\
+    name="viewport"\
+    content="width=device-width, initial-scale=1.0"\
+  >\
+\
+  <title>Tropical Wave Forecast Portal</title>\
+\
+  <style>\
+    :root \{\
+      --background: #07111f;\
+      --panel: rgba(15, 31, 50, 0.9);\
+      --border: rgba(148, 184, 220, 0.22);\
+      --text: #edf6ff;\
+      --muted: #9eb3c8;\
+      --accent: #45c8ff;\
+      --accent2: #8075ff;\
+    \}\
+\
+    * \{\
+      box-sizing: border-box;\
+    \}\
+\
+    body \{\
+      margin: 0;\
+      min-height: 100vh;\
+      color: var(--text);\
+      font-family:\
+        Inter, system-ui, -apple-system, BlinkMacSystemFont,\
+        "Segoe UI", sans-serif;\
+      background:\
+        radial-gradient(circle at 15% 10%, #153b66 0, transparent 35%),\
+        radial-gradient(circle at 85% 20%, #302862 0, transparent 34%),\
+        var(--background);\
+    \}\
+\
+    header \{\
+      padding: 40px 24px 24px;\
+      text-align: center;\
+    \}\
+\
+    header h1 \{\
+      margin: 0;\
+      font-size: clamp(1.8rem, 4vw, 3.2rem);\
+      background: linear-gradient(90deg, #ffffff, #54ceff, #a69dff);\
+      -webkit-background-clip: text;\
+      background-clip: text;\
+      color: transparent;\
+    \}\
+\
+    header p \{\
+      margin: 12px auto 0;\
+      max-width: 720px;\
+      color: var(--muted);\
+    \}\
+\
+    main \{\
+      width: min(1500px, calc(100% - 32px));\
+      margin: 0 auto 50px;\
+    \}\
+\
+    .controls,\
+    .viewer \{\
+      background: var(--panel);\
+      border: 1px solid var(--border);\
+      border-radius: 18px;\
+      backdrop-filter: blur(14px);\
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);\
+    \}\
+\
+    .controls \{\
+      display: grid;\
+      grid-template-columns: repeat(5, minmax(140px, 1fr));\
+      gap: 14px;\
+      padding: 20px;\
+      margin-bottom: 20px;\
+    \}\
+\
+    label \{\
+      display: block;\
+      margin-bottom: 7px;\
+      color: var(--muted);\
+      font-size: 0.82rem;\
+      font-weight: 700;\
+      letter-spacing: 0.04em;\
+      text-transform: uppercase;\
+    \}\
+\
+    select \{\
+      width: 100%;\
+      padding: 11px 12px;\
+      color: var(--text);\
+      background: #10243a;\
+      border: 1px solid var(--border);\
+      border-radius: 10px;\
+      outline: none;\
+      cursor: pointer;\
+    \}\
+\
+    select:focus \{\
+      border-color: var(--accent);\
+      box-shadow: 0 0 0 3px rgba(69, 200, 255, 0.12);\
+    \}\
+\
+    .viewer \{\
+      overflow: hidden;\
+    \}\
+\
+    .viewer-header \{\
+      display: flex;\
+      align-items: center;\
+      justify-content: space-between;\
+      gap: 15px;\
+      padding: 16px 20px;\
+      border-bottom: 1px solid var(--border);\
+    \}\
+\
+    #plot-title \{\
+      margin: 0;\
+      font-size: 1rem;\
+    \}\
+\
+    .button \{\
+      display: inline-block;\
+      padding: 9px 15px;\
+      color: #06111d;\
+      background: linear-gradient(90deg, var(--accent), #8d88ff);\
+      border-radius: 9px;\
+      font-weight: 800;\
+      text-decoration: none;\
+      white-space: nowrap;\
+    \}\
+\
+    .image-area \{\
+      display: grid;\
+      min-height: 500px;\
+      padding: 14px;\
+      place-items: center;\
+      background: rgba(3, 10, 18, 0.65);\
+    \}\
+\
+    #plot-image \{\
+      display: block;\
+      max-width: 100%;\
+      max-height: 85vh;\
+      border-radius: 8px;\
+      object-fit: contain;\
+    \}\
+\
+    #message \{\
+      color: var(--muted);\
+      text-align: center;\
+    \}\
+\
+    footer \{\
+      padding: 0 20px 30px;\
+      color: var(--muted);\
+      text-align: center;\
+      font-size: 0.85rem;\
+    \}\
+\
+    @media (max-width: 950px) \{\
+      .controls \{\
+        grid-template-columns: repeat(2, 1fr);\
+      \}\
+    \}\
+\
+    @media (max-width: 560px) \{\
+      .controls \{\
+        grid-template-columns: 1fr;\
+      \}\
+\
+      .viewer-header \{\
+        align-items: flex-start;\
+        flex-direction: column;\
+      \}\
+\
+      .image-area \{\
+        min-height: 300px;\
+      \}\
+    \}\
+  </style>\
+</head>\
+\
+<body>\
+  <header>\
+    <h1>Tropical Wave Forecast Portal</h1>\
+    <p>\
+      Monthly ECMWF OLR and VP200 Hovm\'f6ller forecasts and tropical-wave maps\
+    </p>\
+  </header>\
+\
+  <main>\
+    <section class="controls">\
+      <div>\
+        <label for="year">Year</label>\
+        <select id="year"></select>\
+      </div>\
+\
+      <div>\
+        <label for="variable">Variable</label>\
+        <select id="variable"></select>\
+      </div>\
+\
+      <div>\
+        <label for="month">Initialization</label>\
+        <select id="month"></select>\
+      </div>\
+\
+      <div>\
+        <label for="plotType">Plot type</label>\
+        <select id="plotType"></select>\
+      </div>\
+\
+      <div>\
+        <label for="target">Forecast member</label>\
+        <select id="target"></select>\
+      </div>\
+    </section>\
+\
+    <section class="viewer">\
+      <div class="viewer-header">\
+        <h2 id="plot-title">Loading plot catalogue\'85</h2>\
+        <a id="download" class="button" href="#" download>\
+          Download PNG\
+        </a>\
+      </div>\
+\
+      <div class="image-area">\
+        <p id="message">Loading\'85</p>\
+        <img id="plot-image" alt="Selected forecast plot" hidden>\
+      </div>\
+    </section>\
+  </main>\
+\
+  <footer>\
+    Forecast products are updated monthly.\
+  </footer>\
+\
+  <script>\
+    const fields = ["year", "variable", "month", "plotType", "target"];\
+    const selectors = Object.fromEntries(\
+      fields.map(field => [field, document.getElementById(field)])\
+    );\
+\
+    const image = document.getElementById("plot-image");\
+    const message = document.getElementById("message");\
+    const title = document.getElementById("plot-title");\
+    const download = document.getElementById("download");\
+\
+    let plots = [];\
+\
+    function unique(values) \{\
+      return [...new Set(values)];\
+    \}\
+\
+    function matchingBefore(field) \{\
+      const fieldIndex = fields.indexOf(field);\
+\
+      return plots.filter(plot =>\
+        fields.slice(0, fieldIndex).every(previous =>\
+          plot[previous] === selectors[previous].value\
+        )\
+      );\
+    \}\
+\
+    function rebuildSelector(field) \{\
+      const previousValue = selectors[field].value;\
+      const options = unique(\
+        matchingBefore(field).map(plot => plot[field])\
+      );\
+\
+      selectors[field].innerHTML = "";\
+\
+      options.forEach(value => \{\
+        const option = document.createElement("option");\
+        option.value = value;\
+        option.textContent = value;\
+        selectors[field].appendChild(option);\
+      \});\
+\
+      if (options.includes(previousValue)) \{\
+        selectors[field].value = previousValue;\
+      \}\
+    \}\
+\
+    function currentPlot() \{\
+      return plots.find(plot =>\
+        fields.every(field => plot[field] === selectors[field].value)\
+      );\
+    \}\
+\
+    function displayPlot() \{\
+      const plot = currentPlot();\
+\
+      if (!plot) \{\
+        image.hidden = true;\
+        message.hidden = false;\
+        message.textContent = "No plot matches this selection.";\
+        title.textContent = "Plot unavailable";\
+        download.removeAttribute("href");\
+        return;\
+      \}\
+\
+      const plotURL = encodeURI(plot.image);\
+\
+      message.hidden = false;\
+      message.textContent = "Loading image\'85";\
+      image.hidden = true;\
+\
+      title.textContent =\
+        `$\{plot.variable\} \'b7 $\{plot.plotType\} \'b7 $\{plot.target\} \'b7 $\{plot.month\}`;\
+\
+      download.href = plotURL;\
+\
+      image.onload = () => \{\
+        message.hidden = true;\
+        image.hidden = false;\
+      \};\
+\
+      image.onerror = () => \{\
+        image.hidden = true;\
+        message.hidden = false;\
+        message.textContent =\
+          "Image could not be loaded. Check its path and capitalization.";\
+      \};\
+\
+      image.src = plotURL;\
+      image.alt = title.textContent;\
+    \}\
+\
+    function refreshFrom(changedField = null) \{\
+      const start = changedField\
+        ? fields.indexOf(changedField) + 1\
+        : 0;\
+\
+      fields.slice(start).forEach(rebuildSelector);\
+      displayPlot();\
+    \}\
+\
+    fields.forEach(field => \{\
+      selectors[field].addEventListener("change", () => refreshFrom(field));\
+    \});\
+\
+    fetch("plots.json")\
+      .then(response => \{\
+        if (!response.ok) \{\
+          throw new Error(`HTTP $\{response.status\}`);\
+        \}\
+        return response.json();\
+      \})\
+      .then(data => \{\
+        plots = data;\
+\
+        if (!plots.length) \{\
+          throw new Error("plots.json contains no plots");\
+        \}\
+\
+        refreshFrom();\
+      \})\
+      .catch(error => \{\
+        title.textContent = "Plot catalogue unavailable";\
+        message.textContent =\
+          `Could not load plots.json: $\{error.message\}`;\
+        console.error(error);\
+      \});\
+  </script>\
+</body>\
+</html>}
