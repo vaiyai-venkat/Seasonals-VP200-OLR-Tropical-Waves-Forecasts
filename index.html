@@ -326,10 +326,27 @@
       return plot.layers || resolvedImage.replace(/\.png$/i, "/layers.json");
     }
 
+    function initializationCode(plot) {
+      // Prefer explicit catalogue metadata. This is the stable format used by
+      // the updated plots.json and works for every initialization month.
+      const explicit = String(plot.initialization || "").replace(/\D/g, "");
+      if (/^\d{6}$/.test(explicit)) return explicit;
+
+      // Newer OLR/VP200 filenames include `_initYYYYMM_`.
+      for (const path of [plotImagePath(plot), plot.layers || ""]) {
+        const match = path.match(/(?:^|_)init(\d{6})(?:_|$)/i);
+        if (match) return match[1];
+      }
+
+      // Legacy VP200 files (including the August set) do not contain `init`.
+      // Their catalogue month remains authoritative, e.g. "2026-08 August".
+      const monthMatch = String(plot.month || "").match(/(\d{4})-(\d{2})/);
+      return monthMatch ? `${monthMatch[1]}${monthMatch[2]}` : null;
+    }
+
     function initializationLabel(plot) {
-      const match = plotImagePath(plot).match(/(?:^|_)init(\d{4})(\d{2})(?:_|$)/i);
-      if (!match) return null;
-      return `Init ${match[1]}-${match[2]}`;
+      const code = initializationCode(plot);
+      return code ? `Init ${code.slice(0, 4)}-${code.slice(4, 6)}` : null;
     }
 
     function createImage(source) {
@@ -543,7 +560,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260920-5", { cache: "reload" });
+        const response = await fetch("plots.json?v=20260920-6", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         if (!Array.isArray(catalogue) || catalogue.length === 0) {
