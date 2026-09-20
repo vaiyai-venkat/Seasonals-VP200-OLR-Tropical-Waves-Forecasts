@@ -560,7 +560,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260920-6", { cache: "reload" });
+        const response = await fetch("plots.json?v=20260920-7", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         if (!Array.isArray(catalogue) || catalogue.length === 0) {
