@@ -1,0 +1,2162 @@
+[
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/OLR/2026-08 August/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202608_20260101_20270303_20260919_181458_299915.png",
+    "layers": "Year 2026/OLR/2026-08 August/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202608_20260101_20270303_20260919_181458_299915/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Control",
+    "image": "Year 2026/OLR/2026-08 August/member_000_control/OLR_Hovmoller_member_0_control_init202608_20260101_20270303_20260919_181458_299915.png",
+    "layers": "Year 2026/OLR/2026-08 August/member_000_control/OLR_Hovmoller_member_0_control_init202608_20260101_20270303_20260919_181458_299915/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/OLR/2026-08 August/ensemble_mean/OLR_Maps_ensemble_mean_init202608_20260919_181458_299915_14day_20panels.png",
+    "layers": "Year 2026/OLR/2026-08 August/ensemble_mean/OLR_Maps_ensemble_mean_init202608_20260919_181458_299915_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Control",
+    "image": "Year 2026/OLR/2026-08 August/member_000_control/OLR_Maps_member_0_control_init202608_20260919_181458_299915_14day_20panels.png",
+    "layers": "Year 2026/OLR/2026-08 August/member_000_control/OLR_Maps_member_0_control_init202608_20260919_181458_299915_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202609_20260101_20270403_20260919_180107_403840.png",
+    "layers": "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202609_20260101_20270403_20260919_180107_403840/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Control",
+    "image": "Year 2026/OLR/2026-09 September/member_000_control/OLR_Hovmoller_member_0_control_init202609_20260101_20270403_20260919_180107_403840.png",
+    "layers": "Year 2026/OLR/2026-09 September/member_000_control/OLR_Hovmoller_member_0_control_init202609_20260101_20270403_20260919_180107_403840/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Maps_ensemble_mean_init202609_20260919_180107_403840_14day_20panels.png",
+    "layers": "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Maps_ensemble_mean_init202609_20260919_180107_403840_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "OLR",
+    "field": "OLR",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Control",
+    "image": "Year 2026/OLR/2026-09 September/member_000_control/OLR_Maps_member_0_control_init202609_20260919_180107_403840_14day_20panels.png",
+    "layers": "Year 2026/OLR/2026-09 September/member_000_control/OLR_Maps_member_0_control_init202609_20260919_180107_403840_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/VP200/2026-08 August/ensemble_mean/CHI200_Hovmoller_ensemble_mean_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/ensemble_mean/CHI200_Hovmoller_ensemble_mean_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Control",
+    "image": "Year 2026/VP200/2026-08 August/member_000_control/CHI200_Hovmoller_member_000_control_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_000_control/CHI200_Hovmoller_member_000_control_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 001",
+    "image": "Year 2026/VP200/2026-08 August/member_001/CHI200_Hovmoller_member_001_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_001/CHI200_Hovmoller_member_001_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 002",
+    "image": "Year 2026/VP200/2026-08 August/member_002/CHI200_Hovmoller_member_002_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_002/CHI200_Hovmoller_member_002_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 003",
+    "image": "Year 2026/VP200/2026-08 August/member_003/CHI200_Hovmoller_member_003_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_003/CHI200_Hovmoller_member_003_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 004",
+    "image": "Year 2026/VP200/2026-08 August/member_004/CHI200_Hovmoller_member_004_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_004/CHI200_Hovmoller_member_004_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 005",
+    "image": "Year 2026/VP200/2026-08 August/member_005/CHI200_Hovmoller_member_005_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_005/CHI200_Hovmoller_member_005_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 006",
+    "image": "Year 2026/VP200/2026-08 August/member_006/CHI200_Hovmoller_member_006_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_006/CHI200_Hovmoller_member_006_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 007",
+    "image": "Year 2026/VP200/2026-08 August/member_007/CHI200_Hovmoller_member_007_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_007/CHI200_Hovmoller_member_007_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 008",
+    "image": "Year 2026/VP200/2026-08 August/member_008/CHI200_Hovmoller_member_008_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_008/CHI200_Hovmoller_member_008_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 009",
+    "image": "Year 2026/VP200/2026-08 August/member_009/CHI200_Hovmoller_member_009_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_009/CHI200_Hovmoller_member_009_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 010",
+    "image": "Year 2026/VP200/2026-08 August/member_010/CHI200_Hovmoller_member_010_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_010/CHI200_Hovmoller_member_010_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 011",
+    "image": "Year 2026/VP200/2026-08 August/member_011/CHI200_Hovmoller_member_011_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_011/CHI200_Hovmoller_member_011_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 012",
+    "image": "Year 2026/VP200/2026-08 August/member_012/CHI200_Hovmoller_member_012_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_012/CHI200_Hovmoller_member_012_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 013",
+    "image": "Year 2026/VP200/2026-08 August/member_013/CHI200_Hovmoller_member_013_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_013/CHI200_Hovmoller_member_013_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 014",
+    "image": "Year 2026/VP200/2026-08 August/member_014/CHI200_Hovmoller_member_014_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_014/CHI200_Hovmoller_member_014_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 015",
+    "image": "Year 2026/VP200/2026-08 August/member_015/CHI200_Hovmoller_member_015_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_015/CHI200_Hovmoller_member_015_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 016",
+    "image": "Year 2026/VP200/2026-08 August/member_016/CHI200_Hovmoller_member_016_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_016/CHI200_Hovmoller_member_016_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 017",
+    "image": "Year 2026/VP200/2026-08 August/member_017/CHI200_Hovmoller_member_017_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_017/CHI200_Hovmoller_member_017_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 018",
+    "image": "Year 2026/VP200/2026-08 August/member_018/CHI200_Hovmoller_member_018_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_018/CHI200_Hovmoller_member_018_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 019",
+    "image": "Year 2026/VP200/2026-08 August/member_019/CHI200_Hovmoller_member_019_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_019/CHI200_Hovmoller_member_019_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 020",
+    "image": "Year 2026/VP200/2026-08 August/member_020/CHI200_Hovmoller_member_020_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_020/CHI200_Hovmoller_member_020_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 021",
+    "image": "Year 2026/VP200/2026-08 August/member_021/CHI200_Hovmoller_member_021_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_021/CHI200_Hovmoller_member_021_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 022",
+    "image": "Year 2026/VP200/2026-08 August/member_022/CHI200_Hovmoller_member_022_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_022/CHI200_Hovmoller_member_022_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 023",
+    "image": "Year 2026/VP200/2026-08 August/member_023/CHI200_Hovmoller_member_023_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_023/CHI200_Hovmoller_member_023_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 024",
+    "image": "Year 2026/VP200/2026-08 August/member_024/CHI200_Hovmoller_member_024_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_024/CHI200_Hovmoller_member_024_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 025",
+    "image": "Year 2026/VP200/2026-08 August/member_025/CHI200_Hovmoller_member_025_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_025/CHI200_Hovmoller_member_025_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 026",
+    "image": "Year 2026/VP200/2026-08 August/member_026/CHI200_Hovmoller_member_026_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_026/CHI200_Hovmoller_member_026_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 027",
+    "image": "Year 2026/VP200/2026-08 August/member_027/CHI200_Hovmoller_member_027_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_027/CHI200_Hovmoller_member_027_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 028",
+    "image": "Year 2026/VP200/2026-08 August/member_028/CHI200_Hovmoller_member_028_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_028/CHI200_Hovmoller_member_028_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 029",
+    "image": "Year 2026/VP200/2026-08 August/member_029/CHI200_Hovmoller_member_029_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_029/CHI200_Hovmoller_member_029_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 030",
+    "image": "Year 2026/VP200/2026-08 August/member_030/CHI200_Hovmoller_member_030_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_030/CHI200_Hovmoller_member_030_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 031",
+    "image": "Year 2026/VP200/2026-08 August/member_031/CHI200_Hovmoller_member_031_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_031/CHI200_Hovmoller_member_031_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 032",
+    "image": "Year 2026/VP200/2026-08 August/member_032/CHI200_Hovmoller_member_032_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_032/CHI200_Hovmoller_member_032_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 033",
+    "image": "Year 2026/VP200/2026-08 August/member_033/CHI200_Hovmoller_member_033_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_033/CHI200_Hovmoller_member_033_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 034",
+    "image": "Year 2026/VP200/2026-08 August/member_034/CHI200_Hovmoller_member_034_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_034/CHI200_Hovmoller_member_034_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 035",
+    "image": "Year 2026/VP200/2026-08 August/member_035/CHI200_Hovmoller_member_035_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_035/CHI200_Hovmoller_member_035_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 036",
+    "image": "Year 2026/VP200/2026-08 August/member_036/CHI200_Hovmoller_member_036_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_036/CHI200_Hovmoller_member_036_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 037",
+    "image": "Year 2026/VP200/2026-08 August/member_037/CHI200_Hovmoller_member_037_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_037/CHI200_Hovmoller_member_037_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 038",
+    "image": "Year 2026/VP200/2026-08 August/member_038/CHI200_Hovmoller_member_038_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_038/CHI200_Hovmoller_member_038_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 039",
+    "image": "Year 2026/VP200/2026-08 August/member_039/CHI200_Hovmoller_member_039_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_039/CHI200_Hovmoller_member_039_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 040",
+    "image": "Year 2026/VP200/2026-08 August/member_040/CHI200_Hovmoller_member_040_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_040/CHI200_Hovmoller_member_040_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 041",
+    "image": "Year 2026/VP200/2026-08 August/member_041/CHI200_Hovmoller_member_041_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_041/CHI200_Hovmoller_member_041_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 042",
+    "image": "Year 2026/VP200/2026-08 August/member_042/CHI200_Hovmoller_member_042_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_042/CHI200_Hovmoller_member_042_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 043",
+    "image": "Year 2026/VP200/2026-08 August/member_043/CHI200_Hovmoller_member_043_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_043/CHI200_Hovmoller_member_043_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 044",
+    "image": "Year 2026/VP200/2026-08 August/member_044/CHI200_Hovmoller_member_044_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_044/CHI200_Hovmoller_member_044_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 045",
+    "image": "Year 2026/VP200/2026-08 August/member_045/CHI200_Hovmoller_member_045_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_045/CHI200_Hovmoller_member_045_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 046",
+    "image": "Year 2026/VP200/2026-08 August/member_046/CHI200_Hovmoller_member_046_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_046/CHI200_Hovmoller_member_046_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 047",
+    "image": "Year 2026/VP200/2026-08 August/member_047/CHI200_Hovmoller_member_047_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_047/CHI200_Hovmoller_member_047_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 048",
+    "image": "Year 2026/VP200/2026-08 August/member_048/CHI200_Hovmoller_member_048_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_048/CHI200_Hovmoller_member_048_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 049",
+    "image": "Year 2026/VP200/2026-08 August/member_049/CHI200_Hovmoller_member_049_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_049/CHI200_Hovmoller_member_049_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Hovmöller",
+    "target": "Member 050",
+    "image": "Year 2026/VP200/2026-08 August/member_050/CHI200_Hovmoller_member_050_20260801_20270226_20260906.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_050/CHI200_Hovmoller_member_050_20260801_20270226_20260906/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/VP200/2026-08 August/ensemble_mean/CHI200_Maps_ensemble_mean_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/ensemble_mean/CHI200_Maps_ensemble_mean_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Control",
+    "image": "Year 2026/VP200/2026-08 August/member_000_control/CHI200_Maps_member_000_control_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_000_control/CHI200_Maps_member_000_control_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 001",
+    "image": "Year 2026/VP200/2026-08 August/member_001/CHI200_Maps_member_001_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_001/CHI200_Maps_member_001_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 002",
+    "image": "Year 2026/VP200/2026-08 August/member_002/CHI200_Maps_member_002_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_002/CHI200_Maps_member_002_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 003",
+    "image": "Year 2026/VP200/2026-08 August/member_003/CHI200_Maps_member_003_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_003/CHI200_Maps_member_003_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 004",
+    "image": "Year 2026/VP200/2026-08 August/member_004/CHI200_Maps_member_004_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_004/CHI200_Maps_member_004_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 005",
+    "image": "Year 2026/VP200/2026-08 August/member_005/CHI200_Maps_member_005_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_005/CHI200_Maps_member_005_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 006",
+    "image": "Year 2026/VP200/2026-08 August/member_006/CHI200_Maps_member_006_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_006/CHI200_Maps_member_006_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 007",
+    "image": "Year 2026/VP200/2026-08 August/member_007/CHI200_Maps_member_007_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_007/CHI200_Maps_member_007_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 008",
+    "image": "Year 2026/VP200/2026-08 August/member_008/CHI200_Maps_member_008_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_008/CHI200_Maps_member_008_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 009",
+    "image": "Year 2026/VP200/2026-08 August/member_009/CHI200_Maps_member_009_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_009/CHI200_Maps_member_009_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 010",
+    "image": "Year 2026/VP200/2026-08 August/member_010/CHI200_Maps_member_010_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_010/CHI200_Maps_member_010_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 011",
+    "image": "Year 2026/VP200/2026-08 August/member_011/CHI200_Maps_member_011_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_011/CHI200_Maps_member_011_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 012",
+    "image": "Year 2026/VP200/2026-08 August/member_012/CHI200_Maps_member_012_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_012/CHI200_Maps_member_012_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 013",
+    "image": "Year 2026/VP200/2026-08 August/member_013/CHI200_Maps_member_013_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_013/CHI200_Maps_member_013_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 014",
+    "image": "Year 2026/VP200/2026-08 August/member_014/CHI200_Maps_member_014_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_014/CHI200_Maps_member_014_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 015",
+    "image": "Year 2026/VP200/2026-08 August/member_015/CHI200_Maps_member_015_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_015/CHI200_Maps_member_015_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 016",
+    "image": "Year 2026/VP200/2026-08 August/member_016/CHI200_Maps_member_016_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_016/CHI200_Maps_member_016_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 017",
+    "image": "Year 2026/VP200/2026-08 August/member_017/CHI200_Maps_member_017_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_017/CHI200_Maps_member_017_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 018",
+    "image": "Year 2026/VP200/2026-08 August/member_018/CHI200_Maps_member_018_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_018/CHI200_Maps_member_018_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 019",
+    "image": "Year 2026/VP200/2026-08 August/member_019/CHI200_Maps_member_019_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_019/CHI200_Maps_member_019_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 020",
+    "image": "Year 2026/VP200/2026-08 August/member_020/CHI200_Maps_member_020_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_020/CHI200_Maps_member_020_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 021",
+    "image": "Year 2026/VP200/2026-08 August/member_021/CHI200_Maps_member_021_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_021/CHI200_Maps_member_021_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 022",
+    "image": "Year 2026/VP200/2026-08 August/member_022/CHI200_Maps_member_022_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_022/CHI200_Maps_member_022_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 023",
+    "image": "Year 2026/VP200/2026-08 August/member_023/CHI200_Maps_member_023_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_023/CHI200_Maps_member_023_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 024",
+    "image": "Year 2026/VP200/2026-08 August/member_024/CHI200_Maps_member_024_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_024/CHI200_Maps_member_024_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 025",
+    "image": "Year 2026/VP200/2026-08 August/member_025/CHI200_Maps_member_025_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_025/CHI200_Maps_member_025_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 026",
+    "image": "Year 2026/VP200/2026-08 August/member_026/CHI200_Maps_member_026_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_026/CHI200_Maps_member_026_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 027",
+    "image": "Year 2026/VP200/2026-08 August/member_027/CHI200_Maps_member_027_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_027/CHI200_Maps_member_027_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 028",
+    "image": "Year 2026/VP200/2026-08 August/member_028/CHI200_Maps_member_028_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_028/CHI200_Maps_member_028_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 029",
+    "image": "Year 2026/VP200/2026-08 August/member_029/CHI200_Maps_member_029_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_029/CHI200_Maps_member_029_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 030",
+    "image": "Year 2026/VP200/2026-08 August/member_030/CHI200_Maps_member_030_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_030/CHI200_Maps_member_030_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 031",
+    "image": "Year 2026/VP200/2026-08 August/member_031/CHI200_Maps_member_031_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_031/CHI200_Maps_member_031_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 032",
+    "image": "Year 2026/VP200/2026-08 August/member_032/CHI200_Maps_member_032_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_032/CHI200_Maps_member_032_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 033",
+    "image": "Year 2026/VP200/2026-08 August/member_033/CHI200_Maps_member_033_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_033/CHI200_Maps_member_033_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 034",
+    "image": "Year 2026/VP200/2026-08 August/member_034/CHI200_Maps_member_034_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_034/CHI200_Maps_member_034_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 035",
+    "image": "Year 2026/VP200/2026-08 August/member_035/CHI200_Maps_member_035_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_035/CHI200_Maps_member_035_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 036",
+    "image": "Year 2026/VP200/2026-08 August/member_036/CHI200_Maps_member_036_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_036/CHI200_Maps_member_036_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 037",
+    "image": "Year 2026/VP200/2026-08 August/member_037/CHI200_Maps_member_037_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_037/CHI200_Maps_member_037_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 038",
+    "image": "Year 2026/VP200/2026-08 August/member_038/CHI200_Maps_member_038_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_038/CHI200_Maps_member_038_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 039",
+    "image": "Year 2026/VP200/2026-08 August/member_039/CHI200_Maps_member_039_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_039/CHI200_Maps_member_039_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 040",
+    "image": "Year 2026/VP200/2026-08 August/member_040/CHI200_Maps_member_040_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_040/CHI200_Maps_member_040_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 041",
+    "image": "Year 2026/VP200/2026-08 August/member_041/CHI200_Maps_member_041_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_041/CHI200_Maps_member_041_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 042",
+    "image": "Year 2026/VP200/2026-08 August/member_042/CHI200_Maps_member_042_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_042/CHI200_Maps_member_042_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 043",
+    "image": "Year 2026/VP200/2026-08 August/member_043/CHI200_Maps_member_043_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_043/CHI200_Maps_member_043_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 044",
+    "image": "Year 2026/VP200/2026-08 August/member_044/CHI200_Maps_member_044_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_044/CHI200_Maps_member_044_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 045",
+    "image": "Year 2026/VP200/2026-08 August/member_045/CHI200_Maps_member_045_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_045/CHI200_Maps_member_045_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 046",
+    "image": "Year 2026/VP200/2026-08 August/member_046/CHI200_Maps_member_046_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_046/CHI200_Maps_member_046_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 047",
+    "image": "Year 2026/VP200/2026-08 August/member_047/CHI200_Maps_member_047_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_047/CHI200_Maps_member_047_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 048",
+    "image": "Year 2026/VP200/2026-08 August/member_048/CHI200_Maps_member_048_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_048/CHI200_Maps_member_048_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 049",
+    "image": "Year 2026/VP200/2026-08 August/member_049/CHI200_Maps_member_049_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_049/CHI200_Maps_member_049_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-08 August",
+    "plotType": "Maps",
+    "target": "Member 050",
+    "image": "Year 2026/VP200/2026-08 August/member_050/CHI200_Maps_member_050_20260906_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-08 August/member_050/CHI200_Maps_member_050_20260906_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/VP200/2026-09 September/ensemble_mean/CHI200_Hovmoller_ensemble_mean_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/ensemble_mean/CHI200_Hovmoller_ensemble_mean_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Control",
+    "image": "Year 2026/VP200/2026-09 September/member_000_control/CHI200_Hovmoller_member_000_control_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_000_control/CHI200_Hovmoller_member_000_control_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 001",
+    "image": "Year 2026/VP200/2026-09 September/member_001/CHI200_Hovmoller_member_001_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_001/CHI200_Hovmoller_member_001_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 002",
+    "image": "Year 2026/VP200/2026-09 September/member_002/CHI200_Hovmoller_member_002_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_002/CHI200_Hovmoller_member_002_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 003",
+    "image": "Year 2026/VP200/2026-09 September/member_003/CHI200_Hovmoller_member_003_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_003/CHI200_Hovmoller_member_003_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 004",
+    "image": "Year 2026/VP200/2026-09 September/member_004/CHI200_Hovmoller_member_004_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_004/CHI200_Hovmoller_member_004_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 005",
+    "image": "Year 2026/VP200/2026-09 September/member_005/CHI200_Hovmoller_member_005_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_005/CHI200_Hovmoller_member_005_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 006",
+    "image": "Year 2026/VP200/2026-09 September/member_006/CHI200_Hovmoller_member_006_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_006/CHI200_Hovmoller_member_006_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 007",
+    "image": "Year 2026/VP200/2026-09 September/member_007/CHI200_Hovmoller_member_007_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_007/CHI200_Hovmoller_member_007_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 008",
+    "image": "Year 2026/VP200/2026-09 September/member_008/CHI200_Hovmoller_member_008_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_008/CHI200_Hovmoller_member_008_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 009",
+    "image": "Year 2026/VP200/2026-09 September/member_009/CHI200_Hovmoller_member_009_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_009/CHI200_Hovmoller_member_009_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 010",
+    "image": "Year 2026/VP200/2026-09 September/member_010/CHI200_Hovmoller_member_010_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_010/CHI200_Hovmoller_member_010_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 011",
+    "image": "Year 2026/VP200/2026-09 September/member_011/CHI200_Hovmoller_member_011_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_011/CHI200_Hovmoller_member_011_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 012",
+    "image": "Year 2026/VP200/2026-09 September/member_012/CHI200_Hovmoller_member_012_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_012/CHI200_Hovmoller_member_012_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 013",
+    "image": "Year 2026/VP200/2026-09 September/member_013/CHI200_Hovmoller_member_013_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_013/CHI200_Hovmoller_member_013_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 014",
+    "image": "Year 2026/VP200/2026-09 September/member_014/CHI200_Hovmoller_member_014_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_014/CHI200_Hovmoller_member_014_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 015",
+    "image": "Year 2026/VP200/2026-09 September/member_015/CHI200_Hovmoller_member_015_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_015/CHI200_Hovmoller_member_015_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 016",
+    "image": "Year 2026/VP200/2026-09 September/member_016/CHI200_Hovmoller_member_016_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_016/CHI200_Hovmoller_member_016_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 017",
+    "image": "Year 2026/VP200/2026-09 September/member_017/CHI200_Hovmoller_member_017_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_017/CHI200_Hovmoller_member_017_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 018",
+    "image": "Year 2026/VP200/2026-09 September/member_018/CHI200_Hovmoller_member_018_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_018/CHI200_Hovmoller_member_018_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 019",
+    "image": "Year 2026/VP200/2026-09 September/member_019/CHI200_Hovmoller_member_019_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_019/CHI200_Hovmoller_member_019_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 020",
+    "image": "Year 2026/VP200/2026-09 September/member_020/CHI200_Hovmoller_member_020_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_020/CHI200_Hovmoller_member_020_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 021",
+    "image": "Year 2026/VP200/2026-09 September/member_021/CHI200_Hovmoller_member_021_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_021/CHI200_Hovmoller_member_021_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 022",
+    "image": "Year 2026/VP200/2026-09 September/member_022/CHI200_Hovmoller_member_022_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_022/CHI200_Hovmoller_member_022_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 023",
+    "image": "Year 2026/VP200/2026-09 September/member_023/CHI200_Hovmoller_member_023_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_023/CHI200_Hovmoller_member_023_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 024",
+    "image": "Year 2026/VP200/2026-09 September/member_024/CHI200_Hovmoller_member_024_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_024/CHI200_Hovmoller_member_024_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 025",
+    "image": "Year 2026/VP200/2026-09 September/member_025/CHI200_Hovmoller_member_025_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_025/CHI200_Hovmoller_member_025_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 026",
+    "image": "Year 2026/VP200/2026-09 September/member_026/CHI200_Hovmoller_member_026_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_026/CHI200_Hovmoller_member_026_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 027",
+    "image": "Year 2026/VP200/2026-09 September/member_027/CHI200_Hovmoller_member_027_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_027/CHI200_Hovmoller_member_027_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 028",
+    "image": "Year 2026/VP200/2026-09 September/member_028/CHI200_Hovmoller_member_028_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_028/CHI200_Hovmoller_member_028_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 029",
+    "image": "Year 2026/VP200/2026-09 September/member_029/CHI200_Hovmoller_member_029_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_029/CHI200_Hovmoller_member_029_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 030",
+    "image": "Year 2026/VP200/2026-09 September/member_030/CHI200_Hovmoller_member_030_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_030/CHI200_Hovmoller_member_030_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 031",
+    "image": "Year 2026/VP200/2026-09 September/member_031/CHI200_Hovmoller_member_031_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_031/CHI200_Hovmoller_member_031_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 032",
+    "image": "Year 2026/VP200/2026-09 September/member_032/CHI200_Hovmoller_member_032_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_032/CHI200_Hovmoller_member_032_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 033",
+    "image": "Year 2026/VP200/2026-09 September/member_033/CHI200_Hovmoller_member_033_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_033/CHI200_Hovmoller_member_033_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 034",
+    "image": "Year 2026/VP200/2026-09 September/member_034/CHI200_Hovmoller_member_034_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_034/CHI200_Hovmoller_member_034_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 035",
+    "image": "Year 2026/VP200/2026-09 September/member_035/CHI200_Hovmoller_member_035_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_035/CHI200_Hovmoller_member_035_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 036",
+    "image": "Year 2026/VP200/2026-09 September/member_036/CHI200_Hovmoller_member_036_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_036/CHI200_Hovmoller_member_036_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 037",
+    "image": "Year 2026/VP200/2026-09 September/member_037/CHI200_Hovmoller_member_037_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_037/CHI200_Hovmoller_member_037_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 038",
+    "image": "Year 2026/VP200/2026-09 September/member_038/CHI200_Hovmoller_member_038_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_038/CHI200_Hovmoller_member_038_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 039",
+    "image": "Year 2026/VP200/2026-09 September/member_039/CHI200_Hovmoller_member_039_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_039/CHI200_Hovmoller_member_039_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 040",
+    "image": "Year 2026/VP200/2026-09 September/member_040/CHI200_Hovmoller_member_040_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_040/CHI200_Hovmoller_member_040_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 041",
+    "image": "Year 2026/VP200/2026-09 September/member_041/CHI200_Hovmoller_member_041_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_041/CHI200_Hovmoller_member_041_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 042",
+    "image": "Year 2026/VP200/2026-09 September/member_042/CHI200_Hovmoller_member_042_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_042/CHI200_Hovmoller_member_042_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 043",
+    "image": "Year 2026/VP200/2026-09 September/member_043/CHI200_Hovmoller_member_043_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_043/CHI200_Hovmoller_member_043_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 044",
+    "image": "Year 2026/VP200/2026-09 September/member_044/CHI200_Hovmoller_member_044_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_044/CHI200_Hovmoller_member_044_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 045",
+    "image": "Year 2026/VP200/2026-09 September/member_045/CHI200_Hovmoller_member_045_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_045/CHI200_Hovmoller_member_045_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 046",
+    "image": "Year 2026/VP200/2026-09 September/member_046/CHI200_Hovmoller_member_046_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_046/CHI200_Hovmoller_member_046_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 047",
+    "image": "Year 2026/VP200/2026-09 September/member_047/CHI200_Hovmoller_member_047_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_047/CHI200_Hovmoller_member_047_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 048",
+    "image": "Year 2026/VP200/2026-09 September/member_048/CHI200_Hovmoller_member_048_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_048/CHI200_Hovmoller_member_048_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 049",
+    "image": "Year 2026/VP200/2026-09 September/member_049/CHI200_Hovmoller_member_049_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_049/CHI200_Hovmoller_member_049_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Hovmöller",
+    "target": "Member 050",
+    "image": "Year 2026/VP200/2026-09 September/member_050/CHI200_Hovmoller_member_050_init202609_20260101_20270331_20260920_081254_557829.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_050/CHI200_Hovmoller_member_050_init202609_20260101_20270331_20260920_081254_557829/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Ensemble Mean",
+    "image": "Year 2026/VP200/2026-09 September/ensemble_mean/CHI200_Maps_ensemble_mean_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/ensemble_mean/CHI200_Maps_ensemble_mean_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Control",
+    "image": "Year 2026/VP200/2026-09 September/member_000_control/CHI200_Maps_member_000_control_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_000_control/CHI200_Maps_member_000_control_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 001",
+    "image": "Year 2026/VP200/2026-09 September/member_001/CHI200_Maps_member_001_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_001/CHI200_Maps_member_001_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 002",
+    "image": "Year 2026/VP200/2026-09 September/member_002/CHI200_Maps_member_002_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_002/CHI200_Maps_member_002_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 003",
+    "image": "Year 2026/VP200/2026-09 September/member_003/CHI200_Maps_member_003_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_003/CHI200_Maps_member_003_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 004",
+    "image": "Year 2026/VP200/2026-09 September/member_004/CHI200_Maps_member_004_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_004/CHI200_Maps_member_004_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 005",
+    "image": "Year 2026/VP200/2026-09 September/member_005/CHI200_Maps_member_005_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_005/CHI200_Maps_member_005_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 006",
+    "image": "Year 2026/VP200/2026-09 September/member_006/CHI200_Maps_member_006_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_006/CHI200_Maps_member_006_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 007",
+    "image": "Year 2026/VP200/2026-09 September/member_007/CHI200_Maps_member_007_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_007/CHI200_Maps_member_007_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 008",
+    "image": "Year 2026/VP200/2026-09 September/member_008/CHI200_Maps_member_008_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_008/CHI200_Maps_member_008_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 009",
+    "image": "Year 2026/VP200/2026-09 September/member_009/CHI200_Maps_member_009_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_009/CHI200_Maps_member_009_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 010",
+    "image": "Year 2026/VP200/2026-09 September/member_010/CHI200_Maps_member_010_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_010/CHI200_Maps_member_010_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 011",
+    "image": "Year 2026/VP200/2026-09 September/member_011/CHI200_Maps_member_011_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_011/CHI200_Maps_member_011_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 012",
+    "image": "Year 2026/VP200/2026-09 September/member_012/CHI200_Maps_member_012_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_012/CHI200_Maps_member_012_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 013",
+    "image": "Year 2026/VP200/2026-09 September/member_013/CHI200_Maps_member_013_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_013/CHI200_Maps_member_013_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 014",
+    "image": "Year 2026/VP200/2026-09 September/member_014/CHI200_Maps_member_014_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_014/CHI200_Maps_member_014_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 015",
+    "image": "Year 2026/VP200/2026-09 September/member_015/CHI200_Maps_member_015_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_015/CHI200_Maps_member_015_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 016",
+    "image": "Year 2026/VP200/2026-09 September/member_016/CHI200_Maps_member_016_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_016/CHI200_Maps_member_016_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 017",
+    "image": "Year 2026/VP200/2026-09 September/member_017/CHI200_Maps_member_017_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_017/CHI200_Maps_member_017_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 018",
+    "image": "Year 2026/VP200/2026-09 September/member_018/CHI200_Maps_member_018_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_018/CHI200_Maps_member_018_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 019",
+    "image": "Year 2026/VP200/2026-09 September/member_019/CHI200_Maps_member_019_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_019/CHI200_Maps_member_019_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 020",
+    "image": "Year 2026/VP200/2026-09 September/member_020/CHI200_Maps_member_020_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_020/CHI200_Maps_member_020_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 021",
+    "image": "Year 2026/VP200/2026-09 September/member_021/CHI200_Maps_member_021_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_021/CHI200_Maps_member_021_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 022",
+    "image": "Year 2026/VP200/2026-09 September/member_022/CHI200_Maps_member_022_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_022/CHI200_Maps_member_022_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 023",
+    "image": "Year 2026/VP200/2026-09 September/member_023/CHI200_Maps_member_023_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_023/CHI200_Maps_member_023_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 024",
+    "image": "Year 2026/VP200/2026-09 September/member_024/CHI200_Maps_member_024_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_024/CHI200_Maps_member_024_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 025",
+    "image": "Year 2026/VP200/2026-09 September/member_025/CHI200_Maps_member_025_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_025/CHI200_Maps_member_025_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 026",
+    "image": "Year 2026/VP200/2026-09 September/member_026/CHI200_Maps_member_026_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_026/CHI200_Maps_member_026_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 027",
+    "image": "Year 2026/VP200/2026-09 September/member_027/CHI200_Maps_member_027_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_027/CHI200_Maps_member_027_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 028",
+    "image": "Year 2026/VP200/2026-09 September/member_028/CHI200_Maps_member_028_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_028/CHI200_Maps_member_028_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 029",
+    "image": "Year 2026/VP200/2026-09 September/member_029/CHI200_Maps_member_029_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_029/CHI200_Maps_member_029_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 030",
+    "image": "Year 2026/VP200/2026-09 September/member_030/CHI200_Maps_member_030_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_030/CHI200_Maps_member_030_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 031",
+    "image": "Year 2026/VP200/2026-09 September/member_031/CHI200_Maps_member_031_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_031/CHI200_Maps_member_031_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 032",
+    "image": "Year 2026/VP200/2026-09 September/member_032/CHI200_Maps_member_032_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_032/CHI200_Maps_member_032_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 033",
+    "image": "Year 2026/VP200/2026-09 September/member_033/CHI200_Maps_member_033_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_033/CHI200_Maps_member_033_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 034",
+    "image": "Year 2026/VP200/2026-09 September/member_034/CHI200_Maps_member_034_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_034/CHI200_Maps_member_034_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 035",
+    "image": "Year 2026/VP200/2026-09 September/member_035/CHI200_Maps_member_035_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_035/CHI200_Maps_member_035_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 036",
+    "image": "Year 2026/VP200/2026-09 September/member_036/CHI200_Maps_member_036_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_036/CHI200_Maps_member_036_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 037",
+    "image": "Year 2026/VP200/2026-09 September/member_037/CHI200_Maps_member_037_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_037/CHI200_Maps_member_037_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 038",
+    "image": "Year 2026/VP200/2026-09 September/member_038/CHI200_Maps_member_038_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_038/CHI200_Maps_member_038_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 039",
+    "image": "Year 2026/VP200/2026-09 September/member_039/CHI200_Maps_member_039_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_039/CHI200_Maps_member_039_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 040",
+    "image": "Year 2026/VP200/2026-09 September/member_040/CHI200_Maps_member_040_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_040/CHI200_Maps_member_040_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 041",
+    "image": "Year 2026/VP200/2026-09 September/member_041/CHI200_Maps_member_041_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_041/CHI200_Maps_member_041_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 042",
+    "image": "Year 2026/VP200/2026-09 September/member_042/CHI200_Maps_member_042_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_042/CHI200_Maps_member_042_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 043",
+    "image": "Year 2026/VP200/2026-09 September/member_043/CHI200_Maps_member_043_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_043/CHI200_Maps_member_043_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 044",
+    "image": "Year 2026/VP200/2026-09 September/member_044/CHI200_Maps_member_044_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_044/CHI200_Maps_member_044_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 045",
+    "image": "Year 2026/VP200/2026-09 September/member_045/CHI200_Maps_member_045_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_045/CHI200_Maps_member_045_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 046",
+    "image": "Year 2026/VP200/2026-09 September/member_046/CHI200_Maps_member_046_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_046/CHI200_Maps_member_046_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 047",
+    "image": "Year 2026/VP200/2026-09 September/member_047/CHI200_Maps_member_047_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_047/CHI200_Maps_member_047_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 048",
+    "image": "Year 2026/VP200/2026-09 September/member_048/CHI200_Maps_member_048_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_048/CHI200_Maps_member_048_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 049",
+    "image": "Year 2026/VP200/2026-09 September/member_049/CHI200_Maps_member_049_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_049/CHI200_Maps_member_049_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  },
+  {
+    "year": "2026",
+    "variable": "VP200",
+    "field": "CHI200",
+    "month": "2026-09 September",
+    "plotType": "Maps",
+    "target": "Member 050",
+    "image": "Year 2026/VP200/2026-09 September/member_050/CHI200_Maps_member_050_init202609_20260920_081254_557829_14day_20panels.png",
+    "layers": "Year 2026/VP200/2026-09 September/member_050/CHI200_Maps_member_050_init202609_20260920_081254_557829_14day_20panels/layers.json"
+  }
+]
