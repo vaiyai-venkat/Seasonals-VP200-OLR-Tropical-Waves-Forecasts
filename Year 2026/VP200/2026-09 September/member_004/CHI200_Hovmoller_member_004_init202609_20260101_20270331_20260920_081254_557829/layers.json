@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "composite": "CHI200_Hovmoller_member_004_init202609_20260101_20270331_20260920_081254_557829.png",
+  "canvas": {
+    "width_px": 2016,
+    "height_px": 2720,
+    "dpi": 180
+  },
+  "layers": {
+    "background": "background.png",
+    "mjo": "mjo.png",
+    "er": "er.png",
+    "cckw": "cckw.png",
+    "mrg": "mrg.png",
+    "low": "low.png"
+  }
+}
