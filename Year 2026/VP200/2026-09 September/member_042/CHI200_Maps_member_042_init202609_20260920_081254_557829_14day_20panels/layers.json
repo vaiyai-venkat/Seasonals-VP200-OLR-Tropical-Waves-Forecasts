@@ -1,8 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "composite": "CHI200_Maps_member_042_init202609_20260920_081254_557829_14day_20panels.png",
   "canvas": {
-    "width_px": 2595,
+    "width_px": 2594,
     "height_px": 4754,
     "dpi": 180
   },
@@ -11,7 +11,6 @@
     "mjo": "mjo.png",
     "er": "er.png",
     "cckw": "cckw.png",
-    "mrg": "mrg.png",
     "low": "low.png"
   }
 }
