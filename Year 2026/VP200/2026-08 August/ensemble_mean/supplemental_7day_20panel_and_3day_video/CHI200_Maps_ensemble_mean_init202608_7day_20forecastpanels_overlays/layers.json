@@ -1,0 +1,134 @@
+{
+  "product": "CHI200",
+  "initialization": "202608",
+  "forecast_start": "2026-08-02",
+  "panel_average_days": 7,
+  "panel_count": 20,
+  "layout": {
+    "rows": 10,
+    "columns": 2
+  },
+  "canvas": {
+    "width_pixels": 2520,
+    "height_pixels": 4320,
+    "dpi": 180
+  },
+  "background": "background.png",
+  "layers": {
+    "mjo": "mjo.png",
+    "kelvin": "kelvin.png",
+    "er": "er.png",
+    "mrg": "mrg.png",
+    "low": "low.png"
+  },
+  "stacking_order": [
+    "background",
+    "mjo",
+    "kelvin",
+    "er",
+    "mrg",
+    "low"
+  ],
+  "periods": [
+    {
+      "panel": 1,
+      "start": "2026-08-02",
+      "end": "2026-08-08"
+    },
+    {
+      "panel": 2,
+      "start": "2026-08-09",
+      "end": "2026-08-15"
+    },
+    {
+      "panel": 3,
+      "start": "2026-08-16",
+      "end": "2026-08-22"
+    },
+    {
+      "panel": 4,
+      "start": "2026-08-23",
+      "end": "2026-08-29"
+    },
+    {
+      "panel": 5,
+      "start": "2026-08-30",
+      "end": "2026-09-05"
+    },
+    {
+      "panel": 6,
+      "start": "2026-09-06",
+      "end": "2026-09-12"
+    },
+    {
+      "panel": 7,
+      "start": "2026-09-13",
+      "end": "2026-09-19"
+    },
+    {
+      "panel": 8,
+      "start": "2026-09-20",
+      "end": "2026-09-26"
+    },
+    {
+      "panel": 9,
+      "start": "2026-09-27",
+      "end": "2026-10-03"
+    },
+    {
+      "panel": 10,
+      "start": "2026-10-04",
+      "end": "2026-10-10"
+    },
+    {
+      "panel": 11,
+      "start": "2026-10-11",
+      "end": "2026-10-17"
+    },
+    {
+      "panel": 12,
+      "start": "2026-10-18",
+      "end": "2026-10-24"
+    },
+    {
+      "panel": 13,
+      "start": "2026-10-25",
+      "end": "2026-10-31"
+    },
+    {
+      "panel": 14,
+      "start": "2026-11-01",
+      "end": "2026-11-07"
+    },
+    {
+      "panel": 15,
+      "start": "2026-11-08",
+      "end": "2026-11-14"
+    },
+    {
+      "panel": 16,
+      "start": "2026-11-15",
+      "end": "2026-11-21"
+    },
+    {
+      "panel": 17,
+      "start": "2026-11-22",
+      "end": "2026-11-28"
+    },
+    {
+      "panel": 18,
+      "start": "2026-11-29",
+      "end": "2026-12-05"
+    },
+    {
+      "panel": 19,
+      "start": "2026-12-06",
+      "end": "2026-12-12"
+    },
+    {
+      "panel": 20,
+      "start": "2026-12-13",
+      "end": "2026-12-19"
+    }
+  ]
+}
