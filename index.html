@@ -323,7 +323,11 @@
       );
     }
 
-    function resolveUrl(path, base = document.baseURI) { return new URL(path, base).href; }
+    // Resolves and encodes relative paths for GitHub Pages URL spaces
+    function resolveUrl(path, base = document.baseURI) {
+      const encodedPath = encodeURI(path);
+      return new URL(encodedPath, base).href;
+    }
 
     function plotImagePath(plot) {
       const imagePath = plot.image || "";
@@ -451,13 +455,23 @@
         download.textContent = `Download Video`;
 
         plotVideo.hidden = false;
+        
+        // Remove existing source elements and set direct src URL
+        plotVideo.pause();
+        plotVideo.replaceChildren();
+        
+        const sourceElement = document.createElement("source");
+        sourceElement.src = resolved;
+        sourceElement.type = source.type || "video/mp4";
+        plotVideo.appendChild(sourceElement);
+        
         plotVideo.src = resolved;
         plotVideo.load();
         
         const playPromise = plotVideo.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            // Autoplay prevention fallback, controls remain interactive
+            // Autoplay fallback: user can click the controls to play
           });
         }
       };
@@ -672,7 +686,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260929-7", { cache: "reload" });
+        const response = await fetch("plots.json?v=20260929-8", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         if (!Array.isArray(catalogue) || catalogue.length === 0) {
