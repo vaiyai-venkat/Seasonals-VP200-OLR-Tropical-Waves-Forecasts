@@ -362,15 +362,14 @@
       const configured = Array.isArray(plot.videoSources)
         ? plot.videoSources
         : [
-            plot.videoH264
-              ? {
-                  src: plot.videoH264,
-                  type: "video/mp4",
-                  label: "H.264 MP4"
-                }
-              : null,
             plot.video
-              ? { src: plot.video, type: "video/mp4", label: "Original MP4" }
+              ? {
+                  src: plot.video,
+                  type: plot.videoType || "video/mp4",
+                  label: String(plot.videoCodec || "").toLowerCase() === "h.264"
+                    ? "H.264 MP4"
+                    : "MP4"
+                }
               : null,
             plot.videoFallback
           ];
@@ -752,7 +751,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260929-5", { cache: "reload" });
+        const response = await fetch("plots.json?v=20260929-6", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         if (!Array.isArray(catalogue) || catalogue.length === 0) {
