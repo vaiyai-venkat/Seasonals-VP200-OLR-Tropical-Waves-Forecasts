@@ -219,7 +219,7 @@
       <div class="image-area">
         <p id="message">Loading…</p>
         <div id="plot-stack" hidden></div>
-        <video id="plot-video" controls playsinline preload="metadata" hidden></video>
+        <video id="plot-video" controls playsinline loop muted preload="auto" hidden></video>
       </div>
     </section>
   </main>
@@ -250,8 +250,6 @@
       low:  { label: "Low-frequency state", color: "#a020f0" }
     };
 
-    // Compatibility for catalogue entries retained by an older GitHub Pages
-    // deployment. The preferred fix remains publishing the current plots.json.
     const legacyImageAliases = {
       "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_20260101_20270403_20260915.png":
         "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202609_20260101_20270403_20260919_180107_403840.png"
@@ -338,15 +336,9 @@
 
     function normalizeVideoSource(source, defaultLabel = "Video") {
       if (!source) return null;
-
       if (typeof source === "string") {
-        return {
-          src: source,
-          type: "video/mp4",
-          label: defaultLabel
-        };
+        return { src: source, type: "video/mp4", label: defaultLabel };
       }
-
       if (typeof source === "object" && source.src) {
         return {
           src: source.src,
@@ -354,7 +346,6 @@
           label: source.label || defaultLabel
         };
       }
-
       return null;
     }
 
@@ -366,9 +357,7 @@
               ? {
                   src: plot.video,
                   type: plot.videoType || "video/mp4",
-                  label: String(plot.videoCodec || "").toLowerCase() === "h.264"
-                    ? "H.264 MP4"
-                    : "MP4"
+                  label: "MP4 Video"
                 }
               : null,
             plot.videoFallback
@@ -378,8 +367,6 @@
         .map((source, index) => normalizeVideoSource(source, `Video source ${index + 1}`))
         .filter(Boolean);
 
-      // Avoid retrying an identical URL when both old and new catalogue
-      // properties point to the same file.
       return normalized.filter(
         (source, index, allSources) =>
           allSources.findIndex((candidate) => candidate.src === source.src) === index
@@ -388,31 +375,20 @@
 
     function plotManifestPath(plot) {
       const resolvedImage = plotImagePath(plot);
-
-      // If an old image path was translated, its old layers path must also be
-      // replaced by the same-stem directory belonging to the new image.
       if (resolvedImage !== plot.image) {
         return resolvedImage.replace(/\.png$/i, "/layers.json");
       }
-
       return plot.layers || resolvedImage.replace(/\.png$/i, "/layers.json");
     }
 
     function initializationCode(plot) {
-      // Prefer explicit catalogue metadata. This is the stable format used by
-      // the updated plots.json and works for every initialization month.
       const explicit = String(plot.initialization || "").replace(/\D/g, "");
       if (/^\d{6}$/.test(explicit)) return explicit;
-
-      // Newer OLR/VP200 filenames include `_initYYYYMM_`.
       for (const path of [plotImagePath(plot), plot.layers || ""]) {
         if (!path) continue;
         const match = path.match(/(?:^|_)init(\d{6})(?:_|$)/i);
         if (match) return match[1];
       }
-
-      // Legacy VP200 files (including the August set) do not contain `init`.
-      // Their catalogue month remains authoritative, e.g. "2026-08 August".
       const monthMatch = String(plot.month || "").match(/(\d{4})-(\d{2})/);
       return monthMatch ? `${monthMatch[1]}${monthMatch[2]}` : null;
     }
@@ -434,7 +410,6 @@
     function setStackGeometry(width, height) {
       const canvasWidth = Number(width);
       const canvasHeight = Number(height);
-
       if (!(canvasWidth > 0 && canvasHeight > 0)) return false;
 
       plotStack.style.setProperty(
@@ -446,47 +421,6 @@
         `${canvasWidth} / ${canvasHeight}`
       );
       return true;
-    }
-
-    function warnIfCanvasDiffers(image, width, height) {
-      image.addEventListener("load", () => {
-        if (image.naturalWidth !== Number(width) || image.naturalHeight !== Number(height)) {
-          console.warn(
-            "Layer canvas differs from layers.json:",
-            image.src,
-            `${image.naturalWidth}x${image.naturalHeight}`,
-            "expected",
-            `${width}x${height}`
-          );
-        }
-      });
-    }
-
-    function displayComposite(plot) {
-      activeManifest = null;
-      activeManifestUrl = null;
-      layerControls.hidden = true;
-      layerOptions.replaceChildren();
-      plotVideo.pause();
-      plotVideo.removeAttribute("src");
-      plotVideo.replaceChildren();
-      plotVideo.load();
-      plotVideo.hidden = true;
-      const imagePath = plotImagePath(plot);
-      const image = createImage(resolveUrl(imagePath));
-      image.alt = `${plot.variable} ${plot.plotType} ${plot.target}`;
-      image.addEventListener("load", () => {
-        setStackGeometry(image.naturalWidth, image.naturalHeight);
-        plotStack.hidden = false;
-        message.hidden = true;
-      });
-      image.addEventListener("error", () => {
-        plotStack.hidden = true;
-        message.hidden = false;
-        message.textContent = `Image not found: ${imagePath}`;
-      });
-      plotStack.replaceChildren(image);
-      plotStack.hidden = true;
     }
 
     function displayVideo(plot, sequence) {
@@ -510,51 +444,22 @@
         if (sequence !== renderSequence) return;
         const source = sources[sourceIndex];
         const sourcePath = source.src;
-        const isGif = /\.gif(?:$|[?#])/i.test(sourcePath);
+        const resolved = resolveUrl(sourcePath);
 
-        if (isGif) {
-          plotVideo.onerror = null;
-          plotVideo.pause();
-          plotVideo.removeAttribute("src");
-          plotVideo.replaceChildren();
-          plotVideo.load();
-          plotVideo.hidden = true;
-          const image = createImage(resolveUrl(sourcePath));
-          download.href = resolveUrl(sourcePath);
-          download.download = sourcePath.split("/").pop();
-          download.textContent = "Download GIF";
-          image.alt = `${plot.variable} 3-day averaged forecast animation`;
-          image.addEventListener("load", () => {
-            setStackGeometry(image.naturalWidth, image.naturalHeight);
-            plotStack.hidden = false;
-            message.hidden = true;
-          });
-          image.addEventListener("error", tryNextSource);
-          plotStack.replaceChildren(image);
-          return;
-        }
-
-        const attemptedIndex = sourceIndex;
-        const handleSourceError = () => {
-          if (sourceIndex !== attemptedIndex) return;
-          tryNextSource();
-        };
+        download.href = resolved;
+        download.download = sourcePath.split("/").pop();
+        download.textContent = `Download Video`;
 
         plotVideo.hidden = false;
-        plotVideo.onerror = handleSourceError;
-        plotVideo.removeAttribute("src");
-        plotVideo.replaceChildren();
-
-        const sourceElement = document.createElement("source");
-        sourceElement.src = resolveUrl(sourcePath);
-        sourceElement.type = source.type;
-        sourceElement.addEventListener("error", handleSourceError, { once: true });
-        plotVideo.appendChild(sourceElement);
-
-        download.href = resolveUrl(sourcePath);
-        download.download = sourcePath.split("/").pop();
-        download.textContent = `Download ${source.label}`;
+        plotVideo.src = resolved;
         plotVideo.load();
+        
+        const playPromise = plotVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            // Autoplay prevention fallback, controls remain interactive
+          });
+        }
       };
 
       const tryNextSource = () => {
@@ -570,7 +475,7 @@
         }
       };
 
-      plotVideo.onloadedmetadata = () => {
+      plotVideo.onloadeddata = () => {
         if (sequence !== renderSequence) return;
         message.hidden = true;
         plotVideo.hidden = false;
@@ -647,15 +552,7 @@
 
       const canvasWidth = Number(manifestCanvasWidth(activeManifest));
       const canvasHeight = Number(manifestCanvasHeight(activeManifest));
-      const hasCanvasGeometry = setStackGeometry(canvasWidth, canvasHeight);
-
-      if (hasCanvasGeometry) {
-        warnIfCanvasDiffers(images[0], canvasWidth, canvasHeight);
-      } else {
-        images[0].addEventListener("load", () => {
-          setStackGeometry(images[0].naturalWidth, images[0].naturalHeight);
-        });
-      }
+      setStackGeometry(canvasWidth, canvasHeight);
 
       const waves = availableWaves(activeManifest);
       const visibleWaves = waves.filter((wave) => selectedWaves.has(wave));
@@ -663,14 +560,38 @@
         const overlay = createImage(
           resolveUrl(activeManifest.layers[wave], manifestDirectory)
         );
-        if (hasCanvasGeometry) {
-          warnIfCanvasDiffers(overlay, canvasWidth, canvasHeight);
-        }
         images.push(overlay);
       }
       plotStack.replaceChildren(...images);
       plotStack.hidden = false;
       message.hidden = true;
+    }
+
+    function displayComposite(plot) {
+      activeManifest = null;
+      activeManifestUrl = null;
+      layerControls.hidden = true;
+      layerOptions.replaceChildren();
+      plotVideo.pause();
+      plotVideo.removeAttribute("src");
+      plotVideo.replaceChildren();
+      plotVideo.load();
+      plotVideo.hidden = true;
+      const imagePath = plotImagePath(plot);
+      const image = createImage(resolveUrl(imagePath));
+      image.alt = `${plot.variable} ${plot.plotType} ${plot.target}`;
+      image.addEventListener("load", () => {
+        setStackGeometry(image.naturalWidth, image.naturalHeight);
+        plotStack.hidden = false;
+        message.hidden = true;
+      });
+      image.addEventListener("error", () => {
+        plotStack.hidden = true;
+        message.hidden = false;
+        message.textContent = `Image not found: ${imagePath}`;
+      });
+      plotStack.replaceChildren(image);
+      plotStack.hidden = true;
     }
 
     async function loadInteractiveLayers(plot, sequence) {
@@ -751,7 +672,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260929-6", { cache: "reload" });
+        const response = await fetch("plots.json?v=20260929-7", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         if (!Array.isArray(catalogue) || catalogue.length === 0) {
