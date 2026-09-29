@@ -189,7 +189,7 @@
     "mediaType": "video",
     "initialization": "202608",
     "videoCodec": "H.264",
-    "video": "Year 2026/VP200/2026-08 August/member_000_control/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_member_000_control_init202608_3day_through20270331.mp4"
+    "video": "Year 2026/VP200/2026-08 August/member_000_control/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_member_000_control_init202608_3day_through20270304.mp4"
   },
   {
     "year": "2026",
@@ -201,7 +201,7 @@
     "mediaType": "video",
     "initialization": "202608",
     "videoCodec": "H.264",
-    "video": "Year 2026/VP200/2026-08 August/ensemble_mean/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_ensemble_mean_init202608_3day_through20270331.mp4"
+    "video": "Year 2026/VP200/2026-08 August/ensemble_mean/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_ensemble_mean_init202608_3day_through20270304.mp4"
   },
   {
     "year": "2026",
@@ -1379,7 +1379,7 @@
     "mediaType": "video",
     "initialization": "202609",
     "videoCodec": "H.264",
-    "video": "Year 2026/VP200/2026-09 September/member_000_control/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_member_000_control_init202609_3day_through20270331.mp4"
+    "video": "Year 2026/VP200/2026-09 September/member_000_control/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_member_000_control_init202609_3day_through20270404.mp4"
   },
   {
     "year": "2026",
@@ -1391,7 +1391,7 @@
     "mediaType": "video",
     "initialization": "202609",
     "videoCodec": "H.264",
-    "video": "Year 2026/VP200/2026-09 September/ensemble_mean/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_ensemble_mean_init202609_3day_through20270331.mp4"
+    "video": "Year 2026/VP200/2026-09 September/ensemble_mean/supplemental_7day_20panel_and_3day_video/CHI200_TropicalWaveMaps_ensemble_mean_init202609_3day_through20270404.mp4"
   },
   {
     "year": "2026",
