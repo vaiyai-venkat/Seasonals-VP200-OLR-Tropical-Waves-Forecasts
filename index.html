@@ -118,7 +118,16 @@
       border-radius: 50%;
       background: var(--wave-color, #d7e8f7);
     }
-    .viewer { overflow: hidden; }
+    .viewer {
+      --video-aspect-number: 1.777778;
+      width: 100%;
+      overflow: hidden;
+      transition: width 160ms ease;
+    }
+    .viewer.video-view {
+      width: min(100%, calc(85vh * var(--video-aspect-number)));
+      margin-inline: auto;
+    }
     .viewer-header {
       display: flex;
       align-items: center;
@@ -146,6 +155,7 @@
       background: rgba(3, 10, 18, 0.65);
     }
     .image-area.video-mode {
+      width: 100%;
       min-height: 0;
       padding: 0;
       background: transparent;
@@ -172,10 +182,9 @@
       object-fit: fill;
     }
     #plot-video {
-      --video-aspect-number: 16 / 9;
       --video-aspect-ratio: 16 / 9;
       display: block;
-      width: min(100%, calc(85vh * var(--video-aspect-number)));
+      width: 100%;
       aspect-ratio: var(--video-aspect-ratio);
       max-width: 100%;
       max-height: 85vh;
@@ -229,7 +238,7 @@
       </fieldset>
     </section>
 
-    <section class="viewer">
+    <section id="viewer" class="viewer">
       <div class="viewer-header">
         <h2 id="plot-title">Loading plot catalogue…</h2>
         <a id="download" class="button" href="#" download>Download PNG</a>
@@ -258,6 +267,7 @@
     const selectors = Object.fromEntries(
       fields.map((field) => [field, document.getElementById(field)])
     );
+    const viewer = document.getElementById("viewer");
     const plotStack = document.getElementById("plot-stack");
     const plotVideo = document.getElementById("plot-video");
     const imageArea = document.getElementById("image-area");
@@ -575,6 +585,7 @@
       activeManifestUrl = null;
       layerControls.hidden = true;
       layerOptions.replaceChildren();
+      viewer.classList.remove("video-view");
       imageArea.classList.remove("video-mode");
       plotVideo.pause();
       plotVideo.removeAttribute("src");
@@ -605,6 +616,7 @@
       layerOptions.replaceChildren();
       plotStack.replaceChildren();
       plotStack.hidden = true;
+      viewer.classList.add("video-view");
       imageArea.classList.add("video-mode");
 
       const sources = videoSources(plot);
@@ -631,13 +643,16 @@
           plotVideo.replaceChildren();
           plotVideo.load();
           plotVideo.hidden = true;
-          imageArea.classList.remove("video-mode");
           const image = createImage(resolveUrl(sourcePath));
           download.href = resolveUrl(sourcePath);
           download.download = sourcePath.split("/").pop();
           download.textContent = "Download GIF";
           image.alt = `${plot.variable} 3-day averaged forecast animation`;
           image.addEventListener("load", () => {
+            viewer.style.setProperty(
+              "--video-aspect-number",
+              String(image.naturalWidth / image.naturalHeight)
+            );
             setStackGeometry(image.naturalWidth, image.naturalHeight);
             plotStack.hidden = false;
             message.hidden = true;
@@ -693,7 +708,7 @@
         const width = Number(plotVideo.videoWidth);
         const height = Number(plotVideo.videoHeight);
         if (width > 0 && height > 0) {
-          plotVideo.style.setProperty("--video-aspect-number", String(width / height));
+          viewer.style.setProperty("--video-aspect-number", String(width / height));
           plotVideo.style.setProperty("--video-aspect-ratio", `${width} / ${height}`);
         }
         message.hidden = true;
@@ -798,6 +813,7 @@
     }
 
     async function loadInteractiveLayers(plot, sequence) {
+      viewer.classList.remove("video-view");
       imageArea.classList.remove("video-mode");
       const manifestPath = plotManifestPath(plot);
       const manifestUrl = resolveUrl(manifestPath);
@@ -821,6 +837,7 @@
       renderSequence += 1;
       const sequence = renderSequence;
       if (!plot) {
+        viewer.classList.remove("video-view");
         imageArea.classList.remove("video-mode");
         plotStack.hidden = true;
         plotVideo.pause();
