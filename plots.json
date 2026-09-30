@@ -1,4 +1,15 @@
-[
+{
+  "schemaVersion": 2,
+  "catalogueMode": "filename-inference",
+  "namingConvention": {
+    "initialization": "initYYYYMM",
+    "monthDirectory": "YYYY-MM MonthName",
+    "variables": ["OLR", "CHI200", "VP200"],
+    "targets": ["ensemble_mean", "member_NNN", "member_NNN_control"],
+    "products": ["Hovmoller", "Maps", "7day_20forecastpanels", "3day_throughYYYYMMDD"],
+    "note": "The page accepts complete plot objects or path-only entries and infers year, initialization month, variable, target and product type from this convention. GitHub Pages cannot list directories, so each newly published product path must still be added to this catalogue by the publishing workflow."
+  },
+  "plots": [
   {
     "year": "2026",
     "variable": "OLR",
@@ -2559,4 +2570,5 @@
     "layers": "Year 2026/VP200/2026-09 September/member_050/CHI200_Maps_member_050_init202609_20260920_081254_557829_14day_20panels/layers.json",
     "initialization": "202609"
   }
-]
+  ]
+}
