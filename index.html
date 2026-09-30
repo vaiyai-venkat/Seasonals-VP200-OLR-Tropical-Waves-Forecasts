@@ -39,7 +39,7 @@
     }
     header p { max-width: 760px; margin: 12px auto 0; color: var(--muted); }
     main { width: min(1500px, calc(100% - 32px)); margin: 0 auto 50px; }
-    .controls, .layer-controls, .viewer {
+    .controls, .layer-controls, .viewer, .methodology {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 18px;
@@ -145,6 +145,11 @@
       place-items: center;
       background: rgba(3, 10, 18, 0.65);
     }
+    .image-area.video-mode {
+      min-height: 0;
+      padding: 0;
+      background: transparent;
+    }
     #plot-stack {
       --plot-aspect-number: 1;
       --plot-aspect-ratio: 1 / 1;
@@ -167,15 +172,27 @@
       object-fit: fill;
     }
     #plot-video {
+      --video-aspect-number: 16 / 9;
+      --video-aspect-ratio: 16 / 9;
       display: block;
-      width: min(100%, 1180px);
+      width: min(100%, calc(85vh * var(--video-aspect-number)));
+      aspect-ratio: var(--video-aspect-ratio);
       max-width: 100%;
       max-height: 85vh;
       background: #000;
-      border-radius: 10px;
+      object-fit: contain;
     }
     #plot-video[hidden] { display: none; }
     #message { color: var(--muted); text-align: center; }
+    .methodology {
+      margin-top: 16px;
+      padding: 22px 24px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .methodology h2 { margin: 0 0 10px; color: var(--text); font-size: 1.15rem; }
+    .methodology p { margin: 8px 0; }
+    .methodology strong { color: var(--text); }
     footer { padding: 0 20px 30px; color: var(--muted); text-align: center; font-size: 0.85rem; }
     @media (max-width: 950px) {
       .controls { grid-template-columns: repeat(2, 1fr); }
@@ -186,6 +203,7 @@
       .controls { grid-template-columns: 1fr; }
       .viewer-header { align-items: flex-start; flex-direction: column; }
       .image-area { min-height: 300px; padding: 6px; }
+      .image-area.video-mode { min-height: 0; padding: 0; }
     }
   </style>
 </head>
@@ -216,11 +234,18 @@
         <h2 id="plot-title">Loading plot catalogue…</h2>
         <a id="download" class="button" href="#" download>Download PNG</a>
       </div>
-      <div class="image-area">
+      <div id="image-area" class="image-area">
         <p id="message">Loading…</p>
         <div id="plot-stack" hidden></div>
         <video id="plot-video" controls playsinline preload="metadata" hidden></video>
       </div>
+    </section>
+
+    <section class="methodology" aria-labelledby="methodology-title">
+      <h2 id="methodology-title">Methodology</h2>
+      <p><strong>Inputs and preprocessing.</strong> Historical fields are taken from ERA5 and joined to the selected ECMWF seasonal initialization. OLR is derived from top-of-atmosphere long-wave radiation: accumulated seasonal TTR is de-accumulated, sign-reversed and converted from J m⁻² to upward-positive W m⁻². VP200/CHI200 is calculated globally from 200-hPa zonal and meridional winds with windspharm, followed by removal of the weighted global mean. Coordinates are standardized, sub-daily forecasts are averaged to daily values, missing values are interpolated, and a decaying boundary adjustment reduces the analysis–forecast discontinuity.</p>
+      <p><strong>Tropical-wave separation.</strong> The combined historical and forecast anomalies are detrended, Tukey-tapered and processed with NCICS-style longitude–time Wheeler–Kiladis Fourier filters. The displayed components are the MJO, equatorial Rossby wave, convectively coupled Kelvin wave, mixed Rossby–gravity wave and the low-frequency background state. Reflection padding is used to reduce attenuation near the forecast endpoint.</p>
+      <p><strong>Products.</strong> Latitude-weighted fields are shown as smoothed Hovmöller diagrams and global maps for the ECMWF control, ensemble mean and selected members. Standard maps contain ten 14-day hindcast and ten 14-day forecast panels. Supplemental products contain twenty consecutive 7-day forecast means with selectable transparent wave overlays, plus an animation of consecutive 3-day means through the available seasonal endpoint.</p>
     </section>
   </main>
 
@@ -235,6 +260,7 @@
     );
     const plotStack = document.getElementById("plot-stack");
     const plotVideo = document.getElementById("plot-video");
+    const imageArea = document.getElementById("image-area");
     const message = document.getElementById("message");
     const plotTitle = document.getElementById("plot-title");
     const download = document.getElementById("download");
@@ -261,6 +287,88 @@
     let activeManifest = null;
     let activeManifestUrl = null;
     let renderSequence = 0;
+
+    function monthLabel(initialization) {
+      if (!/^\d{6}$/.test(initialization)) return null;
+      const year = initialization.slice(0, 4);
+      const month = initialization.slice(4, 6);
+      const date = new Date(Date.UTC(Number(year), Number(month) - 1, 1));
+      const name = new Intl.DateTimeFormat("en", {
+        month: "long",
+        timeZone: "UTC"
+      }).format(date);
+      return `${year}-${month} ${name}`;
+    }
+
+    function inferInitialization(entry, path) {
+      const explicit = String(entry.initialization || "").replace(/\D/g, "");
+      if (/^\d{6}$/.test(explicit)) return explicit;
+      const filenameMatch = path.match(/(?:^|[_-])init[_-]?(\d{6})(?=[_./-]|$)/i);
+      if (filenameMatch) return filenameMatch[1];
+      const folderMatch = path.match(/(?:^|\/)(\d{4})-(0[1-9]|1[0-2])(?:\s+[A-Za-z]+)?(?:\/|$)/);
+      if (folderMatch) return `${folderMatch[1]}${folderMatch[2]}`;
+      const monthMatch = String(entry.month || "").match(/(\d{4})-(\d{2})/);
+      return monthMatch ? `${monthMatch[1]}${monthMatch[2]}` : null;
+    }
+
+    function inferVariable(path) {
+      if (/(?:^|[/_])OLR(?:[/_]|$)/i.test(path)) return "OLR";
+      if (/(?:^|[/_])(?:CHI200|VP200)(?:[/_]|$)/i.test(path)) return "VP200";
+      return null;
+    }
+
+    function inferTarget(path) {
+      if (/ensemble[_ -]?mean/i.test(path)) return "Ensemble Mean";
+      const member = path.match(/member[_-]?(\d{1,3})(?:[_-]?control)?/i);
+      if (/control/i.test(path)) return "Control";
+      return member ? `Member ${String(Number(member[1])).padStart(3, "0")}` : null;
+    }
+
+    function inferPlotType(path) {
+      if (/7day[_-]?20forecastpanels/i.test(path)) return "7-day Maps";
+      if (/TropicalWaveMaps_.*_3day_through\d{8}|\.(?:mp4|gif)(?:[?#].*)?$/i.test(path)) {
+        return "3-day Video";
+      }
+      if (/hovm(?:o|ö)ller/i.test(path)) return "Hovmöller";
+      if (/(?:^|[_/])maps?(?:[_/]|$)/i.test(path)) return "Maps";
+      return null;
+    }
+
+    function normalizeCatalogueEntry(rawEntry) {
+      const entry = typeof rawEntry === "string"
+        ? { path: rawEntry }
+        : { ...(rawEntry || {}) };
+      const path = entry.path || entry.video || entry.image || entry.layers || "";
+      if (!path) return null;
+
+      const initialization = inferInitialization(entry, path);
+      const variable = entry.variable || inferVariable(path);
+      const plotType = entry.plotType || inferPlotType(path);
+      const target = entry.target || inferTarget(path);
+
+      entry.initialization = initialization;
+      entry.year = entry.year || initialization?.slice(0, 4);
+      entry.month = entry.month || (initialization ? monthLabel(initialization) : null);
+      entry.variable = variable;
+      entry.field = entry.field || (variable === "VP200" ? "CHI200" : variable);
+      entry.plotType = plotType;
+      entry.target = target;
+
+      if (!entry.video && /\.(?:mp4|gif)(?:[?#].*)?$/i.test(path)) {
+        entry.video = path;
+        entry.mediaType = "video";
+      } else if (!entry.image && /background\.png(?:[?#].*)?$/i.test(path)) {
+        entry.image = path;
+        entry.layers = entry.layers || path.replace(/background\.png(?:[?#].*)?$/i, "layers.json");
+      } else if (!entry.image && /\.png(?:[?#].*)?$/i.test(path)) {
+        entry.image = path;
+      } else if (!entry.layers && /layers\.json(?:[?#].*)?$/i.test(path)) {
+        entry.layers = path;
+        entry.image = path.replace(/layers\.json(?:[?#].*)?$/i, "background.png");
+      }
+
+      return fields.every((field) => entry[field]) ? entry : null;
+    }
 
     function unique(values) { return [...new Set(values)]; }
 
@@ -467,6 +575,7 @@
       activeManifestUrl = null;
       layerControls.hidden = true;
       layerOptions.replaceChildren();
+      imageArea.classList.remove("video-mode");
       plotVideo.pause();
       plotVideo.removeAttribute("src");
       plotVideo.replaceChildren();
@@ -496,6 +605,7 @@
       layerOptions.replaceChildren();
       plotStack.replaceChildren();
       plotStack.hidden = true;
+      imageArea.classList.add("video-mode");
 
       const sources = videoSources(plot);
       if (sources.length === 0) {
@@ -521,6 +631,7 @@
           plotVideo.replaceChildren();
           plotVideo.load();
           plotVideo.hidden = true;
+          imageArea.classList.remove("video-mode");
           const image = createImage(resolveUrl(sourcePath));
           download.href = resolveUrl(sourcePath);
           download.download = sourcePath.split("/").pop();
@@ -579,6 +690,12 @@
 
       plotVideo.onloadedmetadata = () => {
         if (sequence !== renderSequence) return;
+        const width = Number(plotVideo.videoWidth);
+        const height = Number(plotVideo.videoHeight);
+        if (width > 0 && height > 0) {
+          plotVideo.style.setProperty("--video-aspect-number", String(width / height));
+          plotVideo.style.setProperty("--video-aspect-ratio", `${width} / ${height}`);
+        }
         message.hidden = true;
         plotVideo.hidden = false;
       };
@@ -681,6 +798,7 @@
     }
 
     async function loadInteractiveLayers(plot, sequence) {
+      imageArea.classList.remove("video-mode");
       const manifestPath = plotManifestPath(plot);
       const manifestUrl = resolveUrl(manifestPath);
       try {
@@ -703,6 +821,7 @@
       renderSequence += 1;
       const sequence = renderSequence;
       if (!plot) {
+        imageArea.classList.remove("video-mode");
         plotStack.hidden = true;
         plotVideo.pause();
         plotVideo.hidden = true;
@@ -758,13 +877,17 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20260929-7", { cache: "reload" });
+        const response = await fetch("plots.json?v=20261001-1", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
-        if (!Array.isArray(catalogue) || catalogue.length === 0) {
+        const rawPlots = Array.isArray(catalogue) ? catalogue : catalogue.plots;
+        if (!Array.isArray(rawPlots) || rawPlots.length === 0) {
           throw new Error("plots.json contains no plot entries");
         }
-        plots = catalogue;
+        plots = rawPlots.map(normalizeCatalogueEntry).filter(Boolean);
+        if (plots.length === 0) {
+          throw new Error("No entries match the supported monthly naming convention");
+        }
         for (const field of fields) rebuildSelector(field);
         renderPlot();
       } catch (error) {
