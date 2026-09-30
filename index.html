@@ -120,13 +120,30 @@
     }
     .viewer {
       --video-aspect-number: 1.777778;
+      --video-aspect-ratio: 16 / 9;
+      --video-native-width: 1180px;
       width: 100%;
       overflow: hidden;
       transition: width 160ms ease;
     }
     .viewer.video-view {
-      width: min(100%, calc(85vh * var(--video-aspect-number)));
+      width: min(
+        100%,
+        var(--video-native-width),
+        calc(85vh * var(--video-aspect-number))
+      );
       margin-inline: auto;
+      overflow: visible;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+    .viewer.video-view .viewer-header {
+      margin-bottom: 10px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
     }
     .viewer-header {
       display: flex;
@@ -155,9 +172,13 @@
       background: rgba(3, 10, 18, 0.65);
     }
     .image-area.video-mode {
+      position: relative;
       width: 100%;
+      height: auto;
+      aspect-ratio: var(--video-aspect-ratio);
       min-height: 0;
       padding: 0;
+      overflow: hidden;
       background: transparent;
     }
     #plot-stack {
@@ -182,12 +203,13 @@
       object-fit: fill;
     }
     #plot-video {
-      --video-aspect-ratio: 16 / 9;
+      position: absolute;
+      inset: 0;
       display: block;
       width: 100%;
-      aspect-ratio: var(--video-aspect-ratio);
+      height: 100%;
       max-width: 100%;
-      max-height: 85vh;
+      max-height: none;
       background: #000;
       object-fit: contain;
     }
@@ -653,6 +675,14 @@
               "--video-aspect-number",
               String(image.naturalWidth / image.naturalHeight)
             );
+            viewer.style.setProperty(
+              "--video-aspect-ratio",
+              `${image.naturalWidth} / ${image.naturalHeight}`
+            );
+            viewer.style.setProperty(
+              "--video-native-width",
+              `${image.naturalWidth}px`
+            );
             setStackGeometry(image.naturalWidth, image.naturalHeight);
             plotStack.hidden = false;
             message.hidden = true;
@@ -709,7 +739,8 @@
         const height = Number(plotVideo.videoHeight);
         if (width > 0 && height > 0) {
           viewer.style.setProperty("--video-aspect-number", String(width / height));
-          plotVideo.style.setProperty("--video-aspect-ratio", `${width} / ${height}`);
+          viewer.style.setProperty("--video-aspect-ratio", `${width} / ${height}`);
+          viewer.style.setProperty("--video-native-width", `${width}px`);
         }
         message.hidden = true;
         plotVideo.hidden = false;
