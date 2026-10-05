@@ -39,12 +39,40 @@
     }
     header p { max-width: 760px; margin: 12px auto 0; color: var(--muted); }
     main { width: min(1500px, calc(100% - 32px)); margin: 0 auto 50px; }
-    .controls, .layer-controls, .viewer, .methodology {
+    .content-tabs, .controls, .layer-controls, .viewer, .methodology {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 18px;
       backdrop-filter: blur(14px);
       box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
+    }
+    .content-tabs {
+      display: flex;
+      gap: 8px;
+      width: fit-content;
+      padding: 6px;
+      margin: 0 auto 16px;
+    }
+    .content-tab {
+      min-width: 130px;
+      padding: 10px 18px;
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 800;
+    }
+    .content-tab:hover,
+    .content-tab:focus-visible {
+      color: var(--text);
+      border-color: var(--border);
+      outline: none;
+    }
+    .content-tab[aria-selected="true"] {
+      color: #06111d;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
     }
     .controls {
       display: grid;
@@ -245,6 +273,19 @@
   </header>
 
   <main>
+    <nav class="content-tabs" aria-label="Forecast product sections" role="tablist">
+      <button id="plots-tab" class="content-tab" type="button" role="tab"
+              aria-selected="true" aria-controls="forecast-content" data-section="plots">
+        Plots
+      </button>
+      <button id="animation-tab" class="content-tab" type="button" role="tab"
+              aria-selected="false" aria-controls="forecast-content" data-section="animation"
+              tabindex="-1">
+        Animation
+      </button>
+    </nav>
+
+    <div id="forecast-content" role="tabpanel" aria-labelledby="plots-tab">
     <section class="controls" aria-label="Plot selection">
       <div><label class="field-label" for="year">Year</label><select id="year"></select></div>
       <div><label class="field-label" for="variable">Variable</label><select id="variable"></select></div>
@@ -271,6 +312,7 @@
         <video id="plot-video" controls playsinline preload="metadata" hidden></video>
       </div>
     </section>
+    </div>
 
     <section class="methodology" aria-labelledby="methodology-title">
       <h2 id="methodology-title">Methodology</h2>
@@ -298,6 +340,8 @@
     const download = document.getElementById("download");
     const layerControls = document.getElementById("layer-controls");
     const layerOptions = document.getElementById("layer-options");
+    const contentPanel = document.getElementById("forecast-content");
+    const contentTabs = [...document.querySelectorAll(".content-tab")];
 
     const waveMetadata = {
       mjo:  { label: "MJO", color: "#111111" },
@@ -319,6 +363,7 @@
     let activeManifest = null;
     let activeManifestUrl = null;
     let renderSequence = 0;
+    let activeSection = "plots";
 
     function monthLabel(initialization) {
       if (!/^\d{6}$/.test(initialization)) return null;
@@ -399,10 +444,18 @@
         entry.image = path.replace(/layers\.json(?:[?#].*)?$/i, "background.png");
       }
 
+      entry.section = entry.section || (entry.mediaType === "video" || entry.video
+        ? "animation"
+        : "plots");
+
       return fields.every((field) => entry[field]) ? entry : null;
     }
 
     function unique(values) { return [...new Set(values)]; }
+
+    function sectionPlots() {
+      return plots.filter((plot) => plot.section === activeSection);
+    }
 
     function optionSort(field, values) {
       const sorted = [...values];
@@ -432,7 +485,7 @@
 
     function matchingBefore(field) {
       const fieldIndex = fields.indexOf(field);
-      return plots.filter((plot) =>
+      return sectionPlots().filter((plot) =>
         fields.slice(0, fieldIndex).every(
           (previous) => plot[previous] === selectors[previous].value
         )
@@ -460,7 +513,7 @@
     }
 
     function selectedPlot() {
-      return plots.find((plot) =>
+      return sectionPlots().find((plot) =>
         fields.every((field) => plot[field] === selectors[field].value)
       );
     }
@@ -911,6 +964,21 @@
         renderPlot();
       });
     }
+    for (const tab of contentTabs) {
+      tab.addEventListener("click", () => {
+        const requestedSection = tab.dataset.section;
+        if (!requestedSection || requestedSection === activeSection) return;
+        activeSection = requestedSection;
+        for (const candidate of contentTabs) {
+          const selected = candidate === tab;
+          candidate.setAttribute("aria-selected", String(selected));
+          candidate.tabIndex = selected ? 0 : -1;
+        }
+        contentPanel.setAttribute("aria-labelledby", tab.id);
+        for (const field of fields) rebuildSelector(field);
+        renderPlot();
+      });
+    }
     layerOptions.addEventListener("change", renderLayerChoice);
     layerOptions.addEventListener("click", (event) => {
       const button = event.target.closest("[data-layer-action]");
@@ -925,7 +993,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20261001-1", { cache: "reload" });
+        const response = await fetch("plots.json?v=20261006-1", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         const rawPlots = Array.isArray(catalogue) ? catalogue : catalogue.plots;
