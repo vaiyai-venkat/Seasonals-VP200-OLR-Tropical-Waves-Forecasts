@@ -1,0 +1,134 @@
+{
+  "product": "OLR",
+  "initialization": "202610",
+  "forecast_start": "2026-10-02",
+  "panel_average_days": 7,
+  "panel_count": 20,
+  "layout": {
+    "rows": 10,
+    "columns": 2
+  },
+  "canvas": {
+    "width_pixels": 2520,
+    "height_pixels": 4320,
+    "dpi": 180
+  },
+  "background": "background.png",
+  "layers": {
+    "mjo": "mjo.png",
+    "kelvin": "kelvin.png",
+    "er": "er.png",
+    "mrg": "mrg.png",
+    "low": "low.png"
+  },
+  "stacking_order": [
+    "background",
+    "mjo",
+    "kelvin",
+    "er",
+    "mrg",
+    "low"
+  ],
+  "periods": [
+    {
+      "panel": 1,
+      "start": "2026-10-02",
+      "end": "2026-10-08"
+    },
+    {
+      "panel": 2,
+      "start": "2026-10-09",
+      "end": "2026-10-15"
+    },
+    {
+      "panel": 3,
+      "start": "2026-10-16",
+      "end": "2026-10-22"
+    },
+    {
+      "panel": 4,
+      "start": "2026-10-23",
+      "end": "2026-10-29"
+    },
+    {
+      "panel": 5,
+      "start": "2026-10-30",
+      "end": "2026-11-05"
+    },
+    {
+      "panel": 6,
+      "start": "2026-11-06",
+      "end": "2026-11-12"
+    },
+    {
+      "panel": 7,
+      "start": "2026-11-13",
+      "end": "2026-11-19"
+    },
+    {
+      "panel": 8,
+      "start": "2026-11-20",
+      "end": "2026-11-26"
+    },
+    {
+      "panel": 9,
+      "start": "2026-11-27",
+      "end": "2026-12-03"
+    },
+    {
+      "panel": 10,
+      "start": "2026-12-04",
+      "end": "2026-12-10"
+    },
+    {
+      "panel": 11,
+      "start": "2026-12-11",
+      "end": "2026-12-17"
+    },
+    {
+      "panel": 12,
+      "start": "2026-12-18",
+      "end": "2026-12-24"
+    },
+    {
+      "panel": 13,
+      "start": "2026-12-25",
+      "end": "2026-12-31"
+    },
+    {
+      "panel": 14,
+      "start": "2027-01-01",
+      "end": "2027-01-07"
+    },
+    {
+      "panel": 15,
+      "start": "2027-01-08",
+      "end": "2027-01-14"
+    },
+    {
+      "panel": 16,
+      "start": "2027-01-15",
+      "end": "2027-01-21"
+    },
+    {
+      "panel": 17,
+      "start": "2027-01-22",
+      "end": "2027-01-28"
+    },
+    {
+      "panel": 18,
+      "start": "2027-01-29",
+      "end": "2027-02-04"
+    },
+    {
+      "panel": 19,
+      "start": "2027-02-05",
+      "end": "2027-02-11"
+    },
+    {
+      "panel": 20,
+      "start": "2027-02-12",
+      "end": "2027-02-18"
+    }
+  ]
+}

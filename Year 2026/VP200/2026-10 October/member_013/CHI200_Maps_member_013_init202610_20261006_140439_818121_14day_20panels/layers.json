@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "composite": "CHI200_Maps_member_013_init202610_20261006_140439_818121_14day_20panels.png",
+  "canvas": {
+    "width_px": 2594,
+    "height_px": 4754,
+    "dpi": 180
+  },
+  "layers": {
+    "background": "background.png",
+    "mjo": "mjo.png",
+    "er": "er.png",
+    "cckw": "cckw.png",
+    "low": "low.png"
+  }
+}
