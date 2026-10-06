@@ -354,10 +354,7 @@
 
     // Compatibility for catalogue entries retained by an older GitHub Pages
     // deployment. The preferred fix remains publishing the current plots.json.
-    const legacyImageAliases = {
-      "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_20260101_20270403_20260915.png":
-        "Year 2026/OLR/2026-09 September/ensemble_mean/OLR_Hovmoller_ensemble_mean_init202609_20260101_20270403_20260919_180107_403840.png"
-    };
+    const legacyImageAliases = {};
 
     let plots = [];
     let activeManifest = null;
@@ -993,7 +990,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20261006-1", { cache: "reload" });
+        const response = await fetch("plots.json?v=20261006-162822", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         const rawPlots = Array.isArray(catalogue) ? catalogue : catalogue.plots;
