@@ -462,7 +462,7 @@
       if (field === "plotType") {
         const order = {
           "Hovmöller": 0,
-          "Maps": 1,
+          "14-day Maps": 1,
           "7-day Maps": 2,
           "3-day Video": 3
         };
@@ -990,7 +990,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20261006-164406", { cache: "reload" });
+        const response = await fetch("plots.json?v=20261007-151216", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         const rawPlots = Array.isArray(catalogue) ? catalogue : catalogue.plots;
