@@ -913,6 +913,138 @@
       }
     }
 
+
+    // BEGIN DOWNLOAD_SELECTED_OVERLAYS_V1
+    function loadCanvasImage(url) {
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.decoding = "async";
+        image.addEventListener("load", () => resolve(image), { once: true });
+        image.addEventListener(
+          "error",
+          () => reject(new Error(`Could not load layer: ${url}`)),
+          { once: true }
+        );
+        image.src = url;
+      });
+    }
+
+    function selectedWaveNames() {
+      return [...layerOptions.querySelectorAll(
+        'input[name="wave-layer"]:checked'
+      )].map((input) => input.value);
+    }
+
+    function safeDownloadStem(value) {
+      return String(value || "plot")
+        .trim()
+        .replace(/[^A-Za-z0-9._-]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+    }
+
+    async function downloadSelectedOverlayComposite(event) {
+      const plot = selectedPlot();
+
+      // Videos retain their normal direct-file download behaviour.
+      if (!plot || isVideoPlot(plot)) return;
+
+      // Never fall through to the background.png href for a static product.
+      event.preventDefault();
+
+      // A composite can only be assembled after layers.json has loaded.
+      if (!activeManifest || !activeManifestUrl) {
+        message.hidden = false;
+        message.textContent = "The selectable plot layers are still loading.";
+        return;
+      }
+
+      const originalText = download.textContent;
+      download.textContent = "Preparing PNG…";
+      download.setAttribute("aria-busy", "true");
+
+      try {
+        const manifestDirectory = new URL(".", activeManifestUrl);
+        const background = manifestBackground(activeManifest);
+        if (!background) throw new Error("The manifest has no background layer.");
+
+        const requestedWaves = selectedWaveNames();
+        const layerPaths = [background];
+        for (const wave of requestedWaves) {
+          const layerPath = activeManifest.layers?.[wave];
+          if (layerPath) layerPaths.push(layerPath);
+        }
+
+        const images = await Promise.all(
+          layerPaths.map((path) => loadCanvasImage(
+            resolveUrl(path, manifestDirectory)
+          ))
+        );
+
+        const declaredWidth = Number(manifestCanvasWidth(activeManifest));
+        const declaredHeight = Number(manifestCanvasHeight(activeManifest));
+        const width = declaredWidth > 0
+          ? declaredWidth
+          : images[0].naturalWidth;
+        const height = declaredHeight > 0
+          ? declaredHeight
+          : images[0].naturalHeight;
+
+        if (!(width > 0 && height > 0)) {
+          throw new Error("The layer canvas dimensions are invalid.");
+        }
+
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext("2d");
+        if (!context) throw new Error("Canvas rendering is unavailable.");
+
+        context.clearRect(0, 0, width, height);
+        for (const image of images) {
+          context.drawImage(image, 0, 0, width, height);
+        }
+
+        const blob = await new Promise((resolve, reject) => {
+          canvas.toBlob(
+            (result) => result
+              ? resolve(result)
+              : reject(new Error("The browser could not encode the PNG.")),
+            "image/png"
+          );
+        });
+
+        const waveSuffix = requestedWaves.length
+          ? requestedWaves.join("-")
+          : "background-only";
+        const filename = [
+          plot.variable,
+          plot.plotType,
+          plot.target,
+          initializationCode(plot) || plot.month,
+          waveSuffix,
+        ].map(safeDownloadStem).filter(Boolean).join("_") + ".png";
+
+        const objectUrl = URL.createObjectURL(blob);
+        const temporaryLink = document.createElement("a");
+        temporaryLink.href = objectUrl;
+        temporaryLink.download = filename;
+        document.body.appendChild(temporaryLink);
+        temporaryLink.click();
+        temporaryLink.remove();
+        setTimeout(() => URL.revokeObjectURL(objectUrl), 1500);
+      } catch (error) {
+        console.error("Selected-overlay download failed:", error);
+        message.hidden = false;
+        message.textContent = `Could not create selected-overlay PNG: ${error.message}`;
+      } finally {
+        download.textContent = originalText;
+        download.removeAttribute("aria-busy");
+      }
+    }
+
+    download.addEventListener("click", downloadSelectedOverlayComposite);
+    // END DOWNLOAD_SELECTED_OVERLAYS_V1
+
     function renderPlot() {
       const plot = selectedPlot();
       renderSequence += 1;
@@ -941,7 +1073,7 @@
         : plotImagePath(plot);
       download.href = mediaPath ? resolveUrl(mediaPath) : "#";
       download.download = mediaPath ? mediaPath.split("/").pop() : "";
-      download.textContent = isVideoPlot(plot) ? "Download Video" : "Download PNG";
+      download.textContent = isVideoPlot(plot) ? "Download Video" : "Download Selected PNG";
       message.hidden = false;
       message.textContent = isVideoPlot(plot) ? "Loading video…" : "Loading plot…";
       plotStack.hidden = true;
@@ -990,7 +1122,7 @@
 
     async function initialize() {
       try {
-        const response = await fetch("plots.json?v=20261007-151216", { cache: "reload" });
+        const response = await fetch("plots.json?v=20261011-054845", { cache: "reload" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const catalogue = await response.json();
         const rawPlots = Array.isArray(catalogue) ? catalogue : catalogue.plots;
